@@ -9,5 +9,12 @@ public class CrabWorld extends World
     public CrabWorld() 
     {
         super(560, 560, 1);
+        prepare();
+    }
+    
+    private void prepare()
+    {
+        Crab crab = new Crab();
+        addObject(crab, 60, 60);
     }
 }
